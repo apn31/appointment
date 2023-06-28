@@ -47,9 +47,9 @@ class Appointment extends CI_Controller {
             //die('hi');
 			
         	$data = array(
-        		'name' => $this->input->post('name'),	
+        	'name' => $this->input->post('name'),	
                 'email' => $this->input->post('email'),
-				'date' => $this->input->post('date'),
+		'date' => $this->input->post('date'),
                 'message' => $this->input->post('message'),
                 'doctor_id' => $this->input->post('doctor')
             );
@@ -85,9 +85,9 @@ class Appointment extends CI_Controller {
         if ($this->form_validation->run() == TRUE) {
 			// true case        
         	$data = array(
-        		'name' => $this->input->post('name'),	
+        	'name' => $this->input->post('name'),	
                 'email' => $this->input->post('email'),
-				'date' => $this->input->post('date'),
+		'date' => $this->input->post('date'),
                 'message' => $this->input->post('message'),
                 'doctor_id' => $this->input->post('doctor')
 			);
